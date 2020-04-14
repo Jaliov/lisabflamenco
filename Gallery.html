@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+ 
+<head>
+<title>Gallery</title> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<link href="style1.css" rel="stylesheet" type="text/css"/>
+
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous"
+/>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"
+></script>
+</head>
+
+<style>
+
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body
+{
+margin: auto;
+margin-bottom: 0px;
+padding-bottom: 0px;
+
+}
+
+h1
+{float: right; 
+margin-top: 30px; 
+margin-right: 130px; 
+text-align: left; 
+}
+
+
+#header
+{
+background-image: url(images/blackwhitepolkaadotglow.png); 
+background-repeat: no-repeat;
+background-position: 460px 3px;
+position: relative;
+}
+
+.gallerycontainer
+{
+position: absolute; left: auto; top: 30px; height: 1140px; padding-bottom: auto; margin: auto; Padding-left: 40px;
+background-image: url(images/IMG_0473.jpg);
+/*Add a height attribute and set to largest image's height to prevent overlaying*/
+}
+
+.thumbnail img
+{
+border: 1px solid #FFFF66;
+margin: 0 5px 5px 0;
+}
+
+.thumbnail:hover{
+background-color: red;
+}
+
+.thumbnail:hover img{
+border: 2px ridge white;
+color: red; 
+}
+
+.thumbnail span{ /*CSS for enlarged image*/
+position: absolute;
+background-image: url(images/IMG_0473.jpg);
+padding: 30px;
+padding-right: 80px;
+padding-bottom: 60px;
+left: 10px;
+visibility: hidden;
+text-decoration: none; 
+color: #FFFF66; /*light yellow*/
+}
+
+.thumbnail span img{ /*CSS for enlarged image*/
+border-width: 0;
+padding: 2px;
+}
+
+.thumbnail:hover span{ /*CSS for enlarged image*/
+visibility: visible;
+top: -30px;
+left: 450px;
+ /*position where enlarged image should offset horizontally */
+z-index: 25;
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+
+
+</style> 
+
+<body >
+  <div class="container">
+    <div class="col-md-12">
+    <div class="row">
+    <div class="col-md-12 text-center">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Bio.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Reviews.html">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Collaborations.html">Choreography</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Classes.html">Classes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Events.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Gallery2.html">Gallery 2</a>
+        </li>
+    
+      </ul>
+    
+    </div>
+  </div>
+<h1><span style="line-height: normal;"> Gallery<hr class="style2"></h1>
+
+<div  class="gallerycontainer" id="header">   
+<a class="thumbnail" href="#thumb"><img src="images/Lisa Performing.gif" width="66px" height="100px" border="0"/><span><img src="images/Lisa Performing.jpg"/><br/>Dancing<i> Solea</i></span></a>
+
+<a class="thumbnail" href="#thumb"><img src="images/Lisa classic yellow fan.gif" width="66px" height="100px" border="0" /><span><img src="images/Lisa classic yellow fan.jpg" /></span></a>
+
+<a class="thumbnail" href="#thumb">
+<img src="images/Manolo_Tanguillo2smll.gif" width="66px" height="100px"/><span style="margin-left: -20px;"><img src="images/Manolo_Tanguillo2smll.jpg"/><br/>1988: <i>Tanguillo</i> with the great Manolo Rivera, Cami Hall, NYC</span></a>
+
+<a class="thumbnail" href="#thumb"><img src="images/LisaYellowcapesmll copy.gif" width="66px" height="100px" border="0" /><span style="background-image: none"><img src="images/LisaYellowcapesmll.jpg" /><br /></span></a>
+
+<a class="thumbnail" href="#thumb"><img src="images/CompaniaLisasmll copy.gif" width="66px" height="100px" border="0" /><span><img src="images/CompaniaLisasmll.jpg" /><br/>Compañia Folklorica Latina! (1980's)</span></a>
+
+<br/>
+<a class="thumbnail" href="#thumb"><img src="images/IMG_1003.gif" width="66px" height="100px" border="0" /><span><img src="images/IMG_1003.jpg" /><br /></span></a>
+
+<a class="thumbnail" href="#thumb"><img src="images/expressivesidebendsmll copy.gif" width="66px" height="100px" border="0" /><span><img src="images/expressivesidebendsmll.jpg"><br/></span></a>
+
+<a class="thumbnail" href="#thumb"><img src="images/snakecstume2.gif" width="66px" height="100px" border="0" /><span><img src="images/snakecstume2.jpg" /><br /><i>"...en el jardin"</i> at Grounds for Sculpture </span></a>
+
+<a class="thumbnail" href="#thumb"><img src="images/LisaZapcostmesmll copy.gif" width="66px" height="100px" border="0" /><span><img src="images/LisaZapcostmesmll.jpg" /><br /><i>Zapateado!</i></span></a>
+
+<a class="thumbnail" href="#thumb"><img src="images/Lisa backbend after copy.gif" width="66px" height="100px" border="0"/> <span style="background-image: none;"><img src="images/Lisa backbend after.jpg" /><br /></span></a>
+
+<br/>
+<a class="thumbnail" href="#thumb"><img src="images/LnclnCntrold copy.gif" width="66px" height="100px" border="0" /><span><img src="images/LnclnCntrold.jpg" /><br />Lincoln Center Outdoors 1980's</span></a>
+
+<a class="thumbnail" href="#thumb"><img src="images/Lisa_Orlando2smll.gif" width="66px" height="100px" border="0" /><span style="background-image: none"><img src="images/Lisa_Orlando_perfect.jpg"/><br/>Dancing <i>Sevillanas</i> with the great Orlando Romero</span>
+</a>
+
+<a class="thumbnail" href="#thumb"><img src="images/Lisa_OrlandoRomerosmll.gif" width="66px" height="100px" border="0" /><span style="background-image: none;"><img src="images/Lisa_OrlandoRomerosmll.jpg"/><br/>Dancing <i>Guajiras</i> with Orlando Romero</span></a>
+
+<a class="thumbnail" href="#thumb"><img src="images/BARBIES135 copy.gif" width="66px" height="100px" border="0" /><span><img src="images/BARBIES135.jpg"/><br/><i>Guajiras</i> in white pants: Lisa's tribute to the <br/> late Orlando Romero</span></a>
+
+<a class="thumbnail" href="#thumb"><img src="images/LisaClavilitos.gif" width="66px" height="100px" border="0" /><span><img src="images/LisaClavilitossmll.jpg"/><br/>Singing<i> Clavelitos</i> ("Carnations")</span></a>
+<br/>
+
+<a class="thumbnail" href="#thumb"><img src="images/Lisa singing pose1 copy.gif" width="66px" height="100px" border="0" /><span style="background-image: none"><img src="images/Lisa singing pose1.jpg"/><br/></span></a>
+
+<a class="thumbnail" href="#thumb"><img src="images/Lisa_BilliMarti_LatinHustle.gif" width="66px" height="100px" border="0" /><span style="padding-right: 160px;"><img src="images/Lisa_BilliMarti_LatinHustle.jpg"/><br/>Take a break for <i>Latin Hustle!</i> In the 1980's with partner  <br/>Billi Marti of La Compañia Folklorica Latina</span></a>
+
+<a class="thumbnail" href="#thumb"><img src="images/Lisa_LuisVargas copy.gif" width="66px" height="100px" border="0" /><span><img src="images/Lisa_LuisVargas.jpg"/><br/>With famed cantaor Luis Vargas</span></a>
+
+
+<a class="thumbnail" href="#thumb"><img src="images/Lisapicin_NYTimesDec2010smll.gif" width="66px" height="100px" border="0" /><span><img src="images/Lisapicin_NYTimesDec2010smll.jpg"/><br/>New York TImes, Dec 2011</span></a>
+
+<a class="thumbnail" href="#thumb"><img src="images/Lisaorigpubshotsmll.gif" width="66px" height="100px" border="0" /><span><img src="images/Lisaorigpubshotsmll.jpg"/><br/></span></a>
+
+<!--<ul>
+<hr/>
+
+ <li><a href="index.html">Home</a></li>
+<li><a href="Bio.html">Bio</a></li>
+<li><a href="Reviews.html">Reviews</a></li>
+<li><a href="Classes.html">Classes/Contact</a></li>
+<li><a href="Gallery.html">Gallery</a></li>
+<li><a href="Collaborations.html">Choreography/Collaborations</a></li>
+<li><a href="Events.html">Events/Links</a></li>
+<li><a href="Gallery2.html">Recent Performances/Recent Events</a></li><hr/>
+</ul>
+</div>
+</div> 
+</body>
+</html>-->
+
+
+
