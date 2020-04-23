@@ -45,16 +45,9 @@ body {
     border-width: 100%;
 }
 
-.container {
-    background-image: url(images/IMG_0473.jpg);
-    /*border-width: 100%;*/
-    margin: 0; 
-    padding: 0;
-    box-sizing: border-box;
-    height: 100%;
-}
+
 hr.style2 {
-    border-bottom: 6px double #f8f3f3;
+    border-bottom: 4px double #f8f3f3;
     margin-left: auto;
     width: 75%;
     margin-right: auto;
@@ -63,10 +56,10 @@ hr.style2 {
 
 h1 {
     font-family: "matura-mt-script-capitals-cufonfonts";
-    color: #FFFF66;
-    /*light yellow*/
+    color: #FFFF66;   /*light yellow*/
     font-style: italic;
     text-align: left;
+    padding-top: 20px;
 }
 
 
@@ -101,18 +94,26 @@ a:active {
     font-size: large;
 }
 
-.nav {
-    margin-left: auto;
-    width: 75%;
-    margin-right: auto;
-    padding-bottom: 0px;
-    /*margin-top: 10px;*/
-}
 
 @font-face {
     font-family: "matura-mt-script-capitals-cufonfonts";
     src: url(MATURASC_1.TTF);
 }
 
+#reviewContent {
+    background-image: url(images/Reviewbackground3.png);
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #FF6600;
+    background-repeat: no-repeat;
+}
 
+.variety {
+    color: #FFFF66;
+    margin-top: 60px;  
+}
+
+.Ole {
+    margin-top: 160px;
+}
 

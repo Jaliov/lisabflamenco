@@ -10,77 +10,35 @@
     <link href="style1.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+
 </head>
-<style>
-    #header {
-        background-image: url(images/Reviewbackground3.png);
-        height: 600px;
-        background-position: center;
-        /*margin-left: 80px;*/
-        padding-top: 0px;
-        margin-top: 0px;
-        margin-bottom: 10px;
-        color: #FF6600;
-        background-repeat: no-repeat;
-        margin-right: -50px;
-    }
+<style> 
 
     p {
-        text-align: left;
-        margin: 30px 0px 0px 60px;
+        margin-top: 30px;
         font-style: italic;
-        font-size: 90%;
-        font-weight: bold;
-        color: white;
         letter-spacing: 0.1em;
-
     }
 
     em {
         font-style: normal;
     }
 
-    body {
-        margin-bottom: 10px;
-    }
-
-    .variety {
-        color: #FFFF66;
-        margin-top: 40px;
-    }
-
-    .Ole {
-        margin-top: 140px;
-        margin-left: -50px;
-    }
-
     h1 {
         margin-top: 20px;
     }
 
-    h5 {
-        text-align: left;
-    }
 </style>
 
 <body>
     <div class="container">
         <div class="row">
+       
             <div class="col-md-12 text-center">
 
                 <h1>Reviews/Press </h1>
 
-
-                <ul class="nav">
+                <ul class="nav justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">Home</a>
                     </li>
@@ -107,41 +65,64 @@
                     </li>
 
                 </ul>
-
             </div>
-
-            <div class="col-md-10" id="header">
-                <p>"Another notable solo was Lisa Botalico's <em>'Solea'</em> which, began as a lamentation and
-                    proceeded into a dance of pride and defiance."<em><br />(Jack Anderson, NY Times)</em></p>
-                <p class="variety">"Botalico passed through a variety of rhythms and moods in her solo
-                    <em>'Cantinas.'</em>
-                    <br />In sequence, she emphasized the swaying of her hips, the curling <br />tracery of her arms,
-                    starkly dramatic poses and a rapid 'zapateado.' <br />Finally, hitching up her skirts,
-                    she became a saucy one woman fiesta."<em><br />(Star Ledger)</em></p>
-                <p>"Lisa Botalico was the essence of fiery passion, first playing the role of a <br />slyly sultry
-                    seductress, then becoming the personification of a flickering flame."<br /><em>(Asbury Park
-                        Press)</em></p>
-                <p class="variety">"Bravo Lisa Bottalico, in an <em>applauditissimo 'Solea'</em>; she made the<br />
-                    stage tremble."<br /><em>(Mario Fratti, Il Progresso)</em></p>
-                <p>"...Lisa Botalico's <em>'Solea'</em> had the crowd on it's feet, clapping in rhythm <br />because of
-                    the audacious display of drama emanating from her being."<em><br /> (Asbury Park Press)
-                    </em></p>
             </div>
-
-            <div class="col-md-2 Ole">
-                <h5><a
-                        href="http://www.towntopics.com/wordpress/2015/10/14/ole-flamenco-flourishes-in-princeton-as-lisa-botalico-leads-eager-spanish-dancers/"><i
-                            style="color: white;">“Ole!” Flamenco</br> Flourishes, in </br>Princeton As </br>Lisa
-                            Botalico </br>Leads Eager </br>Spanish Dancers</i></br>Princeton</br>Town
-                        Topics</a><br><br><a class="pdf" href="images/US1Article.pdf"><img
-                            src="images/Adobe_PDF_Icon_svg.png"> US 1 Interview<br />with Lisa in article about</br>Paco
-                        Pena</a></h5>
+            <div class="row" id="reviewContent">
+                <div class="col-md-2 text-light">
+                    <p>"Another notable solo was Lisa Botalico's <em>'Solea'</em> which, began as a <br />lamentation
+                        and
+                        proceeded into a dance of pride and defiance."<em><br />(Jack Anderson, NY Times)</em></p>
+                </div>
+                <div class="col-md-3">
+                    <p class="variety">"Botalico passed through a variety of rhythms and moods in her solo
+                        <em>'Cantinas.'</em>
+                        <br />In sequence, she emphasized the swaying of her hips, the curling tracery of her arms,
+                        starkly dramatic poses and a rapid 'zapateado.' <br />Finally, hitching up her skirts,
+                        she became a saucy one woman fiesta."<em><br />(Star Ledger)</em></p>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-light">"Lisa Botalico was the essence of fiery passion, first playing the role of a
+                      slyly sultry seductress, then becoming the personification of a flickering flame."
+                       <br /><em>(Asbury Park Press)</em></p>
+                           
+                </div>
+                <div class="col-md-2">
+                    <p class="variety" style="margin-top: 100px;">"Bravo Lisa Bottalico, in an <em>applauditissimo 'Solea'</em>; she made the stage tremble."<br /><em>(Mario Fratti, Il Progresso)</em></p>
+                    
+                    <p><img  src="images/Adobe_PDF_Icon_svg.png"> US 1 Interview </a><span class = "text-light"><br />with Lisa in article
+                        about Paco Pena<span></p>
+                
+                </div>
+                     <div class="row">
+                    <div class="col-md-5">
+                        <p class="text-light">"...Lisa Botalico's <em>'Solea'</em> had the crowd on it's feet, clapping
+                            in rhythm because of
+                            the audacious display of drama emanating from her being."<em><br /> (Asbury Park Press)
+                            </em></p>
+                            
+                    <p style="margin-top:20px;"><a
+                            href="http://www.towntopics.com/wordpress/2015/10/14/ole-flamenco-flourishes-in-princeton-as-lisa-botalico-leads-eager-spanish-dancers/"><i
+                            class="text-light"  >“Ole!” Flamenco Flourishes, in Princeton As Lisa
+                                Botalico Leads Eager Spanish Dancers</i><br />Princeton Town
+                            Topics</a><br><br><a class="pdf" href="images/US1Article.pdf">
+                                
+                            </div>  
+                        </div>
             </div>
         </div>
-
-        <hr />
+    </div>
+    <hr />
     </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
