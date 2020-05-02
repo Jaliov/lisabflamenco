@@ -8,6 +8,8 @@
 
 - Created with HTML, CSS, JavaScript and imported JavaScripts
 
+- Runs in the browser
+
 - Updated and streamlined with Bootstrap
 
 ## Published website: www.lisabflamenco.com
