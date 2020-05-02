@@ -6,7 +6,7 @@
 
 - Website first created and published in 2011
 
-- Created with HTML, CSS, JavaScript and imported JavaScripts
+- Created with HTML, CSS, & JavaScript 
 
 - Runs in the browser
 
