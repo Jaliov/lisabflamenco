@@ -6,10 +6,10 @@
 
 - Website first created and published in 2011
 
-- Created with HTML, CSS, JavaScript and imported JavaScripts
+- Created with HTML, CSS, JavaScript 
 
 - Updated and streamlined with Bootstrap
 
 ## Published website: www.lisabflamenco.com
 
-## Hosted by: GoDaddy.com
+### Hosted by: GoDaddy.com
