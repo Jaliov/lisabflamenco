@@ -29,16 +29,16 @@ CSS for Lisa Site
 
 #overlay{ position: absolute; top: 0; left: 0; z-index: 90; width: 100%; height: 500px; background-image: url(images/IMG_0473 copy.gif);}*/
 
- *{
-    margin: 0; 
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    }
 
-    .bioContent {
-        box-sizing: border-box; 
-    }
+}
+
+.bioContent {
+    box-sizing: border-box;
+}
 
 body {
     background-image: url(images/IMG_0473.jpg);
@@ -56,15 +56,17 @@ hr.style2 {
 
 h1 {
     font-family: "matura-mt-script-capitals-cufonfonts";
-    color: #FFFF66;   /*light yellow*/
+    color: #FFFF66;
+    /*light yellow*/
     font-style: italic;
     text-align: left;
     padding-top: 20px;
 }
 
 
-h2,h3, h4, h5 
-{
+h2,
+h3,
+h4 {
     color: white;
     font-size: normal;
     text-align: center;
@@ -72,11 +74,11 @@ h2,h3, h4, h5
 
 
 a {
-    text-decoration: none;   
+    text-decoration: none;
 }
 
 a:link {
-    color: red; 
+    color: red;
 }
 
 a:visited {
@@ -110,10 +112,9 @@ a:active {
 
 .variety {
     color: #FFFF66;
-    margin-top: 60px;  
+    margin-top: 60px;
 }
 
 .Ole {
     margin-top: 160px;
 }
-
