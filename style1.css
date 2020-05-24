@@ -118,3 +118,7 @@ a:active {
 .Ole {
     margin-top: 160px;
 }
+
+.card-body {
+    background-color: rgb(230, 230, 68, 0.2)
+}
