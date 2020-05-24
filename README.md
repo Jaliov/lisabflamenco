@@ -6,7 +6,7 @@
 
 - Website first created and published in 2011
 
-- Created with HTML, CSS, JavaScript 
+- Created with: HTML, CSS, JavaScript, jQuery, lightbox.js
 
 - Updated and streamlined with Bootstrap
 
