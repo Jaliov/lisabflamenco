@@ -4,14 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery</title>
-  <link href="style1.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+
+  <link href="style1.css" rel="stylesheet" type="text/css" media="screen">
+  <link rel="stylesheet" href="lightbox.css" type="text/css" media="screen">
+  <script src="script.js"></script>
+  <script src="prototype.js" type="text/javascript"></script>
+  <script src="scriptaculous.js?load=effects,builder" type="text/javascript"></script>
+  <script src="lightbox.js" type="text/javascript"></script>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-</head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
+  <title>Gallery</title>
+</head>
 <style>
   * {
 
@@ -44,7 +55,7 @@
   .gallerycontainer {
     position: absolute;
     left: auto;
-    top: 30px;
+    margin-top: 30px;
     height: 1140px;
     padding-bottom: auto;
     margin: auto;
@@ -101,7 +112,7 @@
   }
 </style>
 
-<body>
+<body onload="MM_preloadImages(images/menu_on.gif); initLightbox()">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
@@ -140,98 +151,94 @@
             <hr class="style2"></span></h1>
 
         <div class="gallerycontainer" id="header">
-          <a class="thumbnail" href="#thumb"><img src="images/Lisa Performing.gif" width="66px" height="100px"
-              border="0" /><span><img src="images/Lisa Performing.jpg" /><br />Dancing<i> Solea</i></span></a>
 
-          <a class="thumbnail" href="#thumb"><img src="images/Lisa classic yellow fan.gif" width="66px" height="100px"
-              border="0" /><span><img src="images/Lisa classic yellow fan.jpg" /></span></a>
+          <a class='thumbnail' href="images/Lisa Performing.jpg" rel="lightbox[roadtrip]"
+            title='Dancing<em> Solea</em>'><img src="images/Lisa Performing.gif" width="72px" height="83px"
+              border="0"></a>
 
-          <a class="thumbnail" href="#thumb">
-            <img src="images/Manolo_Tanguillo2smll.gif" width="66px" height="100px" /><span
-              style="margin-left: -20px;"><img src="images/Manolo_Tanguillo2smll.jpg" /><br />1988: <i>Tanguillo</i>
-              with the great Manolo Rivera, Cami Hall, NYC</span></a>
+          <a class='thumbnail' href="images/Lisa classic yellow fan.jpg" rel="lightbox[roadtrip]"
+            title="Portrait of Lisa in yellow. <br/>It's a classic!"><img src="images/Lisa classic yellow fan.gif" yj
+              width="72px" height="83px" border="0"></a>
 
-          <a class="thumbnail" href="#thumb"><img src="images/LisaYellowcapesmll copy.gif" width="66px" height="100px"
-              border="0" /><span style="background-image: none"><img
-                src="images/LisaYellowcapesmll.jpg" /><br /></span></a>
+          <a class='thumbnail' href="images/Manolo_Tanguillo2smll.jpg" rel="lightbox[roadtrip]"
+            title="<em>Tanguillo</em>  with the great Manolo Rivera, Cami Hall, NYC"><img
+              src="images/Manolo_Tanguillo2smll.gif" width="72px" height="83px" border="0"></a>
 
-          <a class="thumbnail" href="#thumb"><img src="images/CompaniaLisasmll copy.gif" width="66px" height="100px"
-              border="0" /><span><img src="images/CompaniaLisasmll.jpg" /><br />Compañia Folklorica Latina!
-              (1980's)</span></a>
+          <a class='thumbnail' href="images/LisaYellowcapesmll.jpg" rel="lightbox[roadtrip]"
+            title="With a yellow cape"><img src="images/LisaYellowcapesmll copy.gif" width="72px" height="83px"
+              border="0"></a>
 
+          <a class='thumbnail' href="images/CompaniaLisasmll.jpg" rel="lightbox[roadtrip]"
+            title="Compañia Folklorica Latina! (1980's)"> <img src="images/CompaniaLisasmll copy.gif" width="72px"
+              height="83px" border="0"></a>
+
+          <a class='thumbnail' href="images/IMG_1003.jpg" rel="lightbox[roadtrip]" title=""> <img
+              src="images/IMG_1003.gif" width="72px" height="83px" border="0"></a>
+
+          <br>
+          <a class='thumbnail' href="images/expressivesidebendsmll.jpg" rel="lightbox[roadtrip]"><img
+              src="images/expressivesidebendsmll copy.gif" width="72px" height="83px" border="0"></a>
+
+          <a class='thumbnail' href="images/snakecstume2.jpg" rel="lightbox[roadtrip]" title="<em>...en el
+            jardin</em> at Grounds for Sculpture, NJ"><img src="images/snakecstume2.gif" width="72px" height="83px"
+              border="0"></a>
+
+          <a class='thumbnail' href="images/LisaZapcostmesmll.jpg" rel="lightbox[roadtrip]" title="Zapateado!"><img
+              src="images/LisaZapcostmesmll copy.gif" width="72px" height="83px" border="0"></a>
+
+
+          <a class='thumbnail' href="images/Lisa backbend after.jpg" rel="lightbox[roadtrip]" title="The backbend"><img
+              src="images/Lisa backbend after copy.gif" width="72px" height="83px" border="0"></a>
+
+          <a class='thumbnail' href="images/LnclnCntrold.jpg" rel="lightbox[roadtrip]"
+            title="Lincoln Center Outdoors 1980's"><img src="images/LnclnCntrold copy.gif" width="72px" height="83px"
+              border="0"></a>
           <br />
-          <a class="thumbnail" href="#thumb"><img src="images/IMG_1003.gif" width="66px" height="100px"
-              border="0" /><span><img src="images/IMG_1003.jpg" /><br /></span></a>
+          <a class='thumbnail' href="images/Lisa_Orlando_perfect.jpg" rel="lightbox[roadtrip]" title="Dancing <em>Sevillanas</em> with the great Orlando
+              Romero"><img src="images/Lisa_Orlando2smll.gif" width="72px" height="83px" border="0"></a>
 
-          <a class="thumbnail" href="#thumb"><img src="images/expressivesidebendsmll copy.gif" width="66px"
-              height="100px" border="0" /><span><img src="images/expressivesidebendsmll.jpg"><br /></span></a>
+          <a class='thumbnail' href="images/Lisa_OrlandoRomerosmll.jpg" rel="lightbox[roadtrip]"
+            title="Dancing <em>Guajiras</em> with the great Orlando Romero"><img src="images/Lisa_OrlandoRomerosmll.gif"
+              width="72px" height="83px" border="0"></a>
 
-          <a class="thumbnail" href="#thumb"><img src="images/snakecstume2.gif" width="66px" height="100px"
-              border="0" /><span><img src="images/snakecstume2.jpg" /><br /><i>"...en el jardin"</i> at Grounds for
-              Sculpture </span></a>
+          <a class='thumbnail' href="images/BARBIES135.jpg" rel="lightbox[roadtrip]"
+            title="<em>Guajiras</em> in a white suit and hat: Lisa's tribute to the late Orlando Romero">
+            <img src="images/BARBIES135 copy.gif" width="72px" height="83px" border="0"></a>
 
-          <a class="thumbnail" href="#thumb"><img src="images/LisaZapcostmesmll copy.gif" width="66px" height="100px"
-              border="0" /><span><img src="images/LisaZapcostmesmll.jpg" /><br /><i>Zapateado!</i></span></a>
-
-          <a class="thumbnail" href="#thumb"><img src="images/Lisa backbend after copy.gif" width="66px" height="100px"
-              border="0" /> <span style="background-image: none;"><img
-                src="images/Lisa backbend after.jpg" /><br /></span></a>
-
+          <a class='thumbnail' href="images/LisaClavilitossmll.jpg" rel="lightbox[roadtrip]" title="Singing<em> Clavelitos</em>
+            (Carnations)"><img src="images/LisaClavilitos.gif" width="72px" height="83px" border="0"></a>
           <br />
-          <a class="thumbnail" href="#thumb"><img src="images/LnclnCntrold copy.gif" width="66px" height="100px"
-              border="0" /><span><img src="images/LnclnCntrold.jpg" /><br />Lincoln Center Outdoors 1980's</span></a>
+          <a class='thumbnail' href="images/Lisa singing pose1.jpg" rel="lightbox[roadtrip]" title="Singing!">
+            <img src="images/Lisa singing pose1 copy.gif" width="72px" height="83px" border="0"></a>
 
-          <a class="thumbnail" href="#thumb"><img src="images/Lisa_Orlando2smll.gif" width="66px" height="100px"
-              border="0" /><span style="background-image: none"><img
-                src="images/Lisa_Orlando_perfect.jpg" /><br />Dancing <i>Sevillanas</i> with the great Orlando
-              Romero</span>
-          </a>
+          <a class='thumbnail' href="images/Lisa_BilliMarti_LatinHustle.jpg" rel="lightbox[roadtrip]" title="Take a break for <em>Latin Hustle!</em> In the 1980's
+            with partner Billi Marti of La Compañia Folklorica Latina" </a> <img
+            src="images/Lisa_BilliMarti_LatinHustle.gif" width="72px" height="83px" border="0"></a>
 
-          <a class="thumbnail" href="#thumb"><img src="images/Lisa_OrlandoRomerosmll.gif" width="66px" height="100px"
-              border="0" /><span style="background-image: none;"><img
-                src="images/Lisa_OrlandoRomerosmll.jpg" /><br />Dancing <i>Guajiras</i> with Orlando Romero</span></a>
+          <a class='thumbnail' href="images/Lisa_LuisVargas.jpg" rel="lightbox[roadtrip]"
+            title="With famed Flamemco cantaor Luis Vargas">
+            <img src="images/Lisa_LuisVargas copy.gif" width="72px" height="83px" border="0"></a>
 
-          <a class="thumbnail" href="#thumb"><img src="images/BARBIES135 copy.gif" width="66px" height="100px"
-              border="0" /><span><img src="images/BARBIES135.jpg" /><br /><i>Guajiras</i> in white pants: Lisa's tribute
-              to the <br /> late Orlando Romero</span></a>
+          </br>
+          <a class='thumbnail' href="images/Lisapicin_NYTimesDec2010smll.jpg" rel="lightbox[roadtrip]"
+            title="New York Times, Dec 2011">
+            <img src="images/Lisapicin_NYTimesDec2010smll.gif" width="72px" height="83px" border="0"></a>
 
-          <a class="thumbnail" href="#thumb"><img src="images/LisaClavilitos.gif" width="66px" height="100px"
-              border="0" /><span><img src="images/LisaClavilitossmll.jpg" /><br />Singing<i> Clavelitos</i>
-              ("Carnations")</span></a>
-          <br />
-
-          <a class="thumbnail" href="#thumb"><img src="images/Lisa singing pose1 copy.gif" width="66px" height="100px"
-              border="0" /><span style="background-image: none"><img
-                src="images/Lisa singing pose1.jpg" /><br /></span></a>
-
-          <a class="thumbnail" href="#thumb"><img src="images/Lisa_BilliMarti_LatinHustle.gif" width="66px"
-              height="100px" border="0" /><span style="padding-right: 160px;"><img
-                src="images/Lisa_BilliMarti_LatinHustle.jpg" /><br />Take a break for <i>Latin Hustle!</i> In the 1980's
-              with partner <br />Billi Marti of La Compañia Folklorica Latina</span></a>
-
-          <a class="thumbnail" href="#thumb"><img src="images/Lisa_LuisVargas copy.gif" width="66px" height="100px"
-              border="0" /><span><img src="images/Lisa_LuisVargas.jpg" /><br />With famed cantaor Luis Vargas</span></a>
-
-
-          <a class="thumbnail" href="#thumb"><img src="images/Lisapicin_NYTimesDec2010smll.gif" width="66px"
-              height="100px" border="0" /><span><img src="images/Lisapicin_NYTimesDec2010smll.jpg" /><br />New York
-              TImes, Dec 2011</span></a>
-
-          <a class="thumbnail" href="#thumb"><img src="images/Lisaorigpubshotsmll.gif" width="66px" height="100px"
-              border="0" /><span><img src="images/Lisaorigpubshotsmll.jpg" /><br /></span></a>
+          <a class='thumbnail' href="images/Lisaorigpubshotsmll.jpg" rel="lightbox[roadtrip]"
+            title="New York Times, Dec 2011">
+            <img src="images/Lisaorigpubshotsmll.gif" width="72px" height="83px" border="0"></a>
 
         </div>
       </div>
+    </div>
 
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-      </script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-      </script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-      </script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

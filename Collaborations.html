@@ -11,7 +11,7 @@
 
   <link href="style1.css" rel="stylesheet" type="text/css" media="screen">
   <link rel="stylesheet" href="lightbox.css" type="text/css" media="screen">
-
+  <script src="script.js"></script>
   <script src="prototype.js" type="text/javascript"></script>
   <script src="scriptaculous.js?load=effects,builder" type="text/javascript"></script>
   <script src="lightbox.js" type="text/javascript"></script>
@@ -21,240 +21,225 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-  <title>Collaborations</title>
-  <style type="text/css">
-    body {
-      padding-bottom: 150px;
-      border-bottom-width: 150px;
-    }
+  <title>Choreography</title>
+</head>
+<style>
+  * {
 
-    #header {
-      background-image: url(images/Lisamarie4fade.png);
-      background-repeat: no-repeat;
-      background-position: 380px 5px;
-      position: relative;
-    }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-    .gallerycontainer {
-      left: 60px;
-      margin-top: 10px;
-      height: 500px;
-      padding-bottom: 100px;
-      margin-bottom: 50px;
-      /*Add a height attribute and set to largest image's height to prevent overlaying*/
-    }
+  body {
+    margin: auto;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 
-    .thumbnail img {
-      border: 1px solid #FFFF66;
-      margin: 0 5px 5px 0;
-    }
+  }
 
-    .thumbnail:hover {
-      background-color: red;
-    }
+  h1 {
+    float: right;
+    margin-top: 10px;
+    margin-right: 130px;
+    text-align: center;
+    padding-left: 20px;
+  }
 
-    .thumbnail:hover img {
-      border: 2px ridge white;
-    }
+  #header {
+    background-image: url(images/Lisamarie4fade.png);
+    background-repeat: no-repeat;
+    background-position: 400px 3px;
+    position: relative;
+  }
 
-    .thumbnail span {
-      /*CSS for enlarged image*/
-      position: absolute;
-      background-image: url(images/IMG_0473.jpg);
-      padding-right: 140px;
-      padding-bottom: 80px;
-      left: 0px;
-      border: 0px ridge white;
-      visibility: hidden;
-      text-decoration: none;
-      color: #FFFF66;
-      /*light yellow*/
-    }
+  .gallerycontainer {
+    position: absolute;
+    left: auto;
+    margin-top: 10px;
+    height: 1140px;
+    padding-bottom: auto;
+    margin: auto;
+    Padding-left: 40px;
+    background-image: url(images/IMG_0473.jpg);
+    /*Add a height attribute and set to largest image's height to prevent overlaying*/
+  }
 
-    .thumbnail span img {
-      /*CSS for enlarged image*/
-      border-width: 0;
-      padding: 2px;
-    }
+  .thumbnail img {
+    border: 1px solid #FFFF66;
+    margin: 0 5px 5px 0;
+  }
 
-    .thumbnail:hover span {
-      /*CSS for enlarged image*/
-      visibility: visible;
-      top: 0px;
-      left: 390px;
-      /*position where enlarged image should offset horizontally */
-    }
+  .thumbnail:hover {
+    background-color: red;
+  }
 
-    ul {
-      margin-right: 170px;
-      margin-top: -120px;
-      margin-bottom: 10px;
-      float: right;
-      text-align: center;
-      list-style-type: none;
-    }
+  .thumbnail:hover img {
+    border: 2px ridge white;
+    color: red;
+  }
 
-    #left {
-      text-align: center;
-      margin-left: 50px;
-      margin-top: 40px;
-      font-size: normal;
-    }
+  .thumbnail span {
+    /*CSS for enlarged image*/
+    position: absolute;
+    background-image: url(images/IMG_0473.jpg);
+    padding: 30px;
+    padding-right: 80px;
+    padding-bottom: 60px;
+    left: 10px;
+    visibility: hidden;
+    text-decoration: none;
+    color: #FFFF66;
+    /*light yellow*/
+  }
 
-    h1 {
-      float: right;
-      margin-top: 10px;
-      margin-right: 130px;
-      text-align: left;
-      padding: 0px;
-      padding-left: 10px;
-      line-height: normal;
-      /*light yellow*/
-    }
+  .thumbnail span img {
+    /*CSS for enlarged image*/
+    border-width: 0;
+    padding: 2px;
+  }
 
-    hr {
-      line-height: .8;
-    }
+  .thumbnail:hover span {
+    /*CSS for enlarged image*/
+    visibility: visible;
+    top: -30px;
+    left: 450px;
+    /*position where enlarged image should offset horizontally */
+    z-index: 25;
+  }
 
-    h2 {
-      margin-left: 60px;
-      margin-top: 20px;
-      color: red;
-      font-size: medium;
-    }
-
-    h3 {
-      color: #FFFF66;
-    }
-
-    p {
-      margin-top: 10px;
-      width: 150px;
-      text-align: left;
-      padding-left: 10px;
-    }
-
-    .right {
-      float: right;
-      padding-left: 5px;
-      padding-top: 0px;
-      margin-left: 40px;
-      margin-top: 60px;
-      width: 150px;
-      background: none;
-    }
-
-    i {
-      color: white;
-    }
-  </style>
+  .nav {
+    margin-top: 10px;
+  }
+</style>
 
 <body onload="MM_preloadImages(images/menu_on.gif); initLightbox()">
   <div class="container">
-    <hr />
-    <h1>Collaborations/<br />Choreography
-      <hr />
-    </h1>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Bio.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Reviews.html">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Collaborations.html">Choreography</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Classes.html">Classes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Gallery2.html">Gallery 2</a>
+          </li>
+        </ul>
 
-    <br />
-
-    <div style="margin-top: 10px;" class=" gallerycontainer d-block rounded mx-auto sm" id="header">
-
-      <a class="thumbnail" href="images/LisaKim1.jpg" rel="lightbox[roadtrip]"
-        title="Lisa and Alexia (<em>Belly Dance & Beyond</em>)"><img src=" images/LisaKim1.gif"></a>
-
-      <a class="thumbnail" href="images/Lisa MarieGrnds for Sculpture3.jpg" rel="lightbox[roadtrip]"
-        title="<em>...en el jardin </em>  with modern dancer Marie Alonzo at the Grounds for Sculpture, NJ"><img
-          src="images/Lisa MarieGrnds for Sculpture3.gif"></a>
-
-      <a class="thumbnail" href="images/LisaRamya.jpg" rel="lightbox[roadtrip]" title="With Ramya Ramnarayan
-          in <em>Journey,</em> Alborada Spanish Dance Theatre"><img src="images/LisaRamya copy.gif"></a>
-
-      <a class="thumbnail" href="images/Lisa_Ramya2a.jpg" rel="lightbox[roadtrip]" title="Lisa with Ramya Ramnarayan, Bharathanatyam dancer, at the Crossroads Theatre, NJ
-        <br/><span style = 'font-size:80%;'><em>The highlight, however, was Federico Garcia Lorca&#146;s <em>Zorongo</em>, in which
-        Botalico
-        sang and danced while Ramnarayan translated the lyrics into her own idiom...Perhaps
-        more than
-        anything it was the performers&#146; musical sensitivity that enabled them so perfectly to
-        harmonize
-        their styles and footwork, creating an atmosphere of moonlit rapture.</em> (Star Ledger,
-        Sept
-        2010)</span>"> <img src="images/DSC_0789_788 copy.gif"></a>
-      <br />
-
-      <a class="thumbnail" href="images/Lisa_Willie.jpg" rel="lightbox[roadtrip]" title="Willie Sanchez of NJN's <em>Images/Imagenes</em> and the Emmy for his documentary <em>The
-      Spanish  Guitar</em>. Lisa is featured."><img src="images/Lisa_Willie copy.gif"></a>
-
-
-
-      <a class="thumbnail" href="images/Lisa_Ramya_Co.jpg" rel="lightbox[roadtrip]"
-        title="Lisa with Ramya Ramnarayan and the Ngifrithyanjali Ensemble, Crossroads Theatre">
-        <img src="images/Lisa_Ramya_Co.gif"></a>
-
-      <a class="thumbnail" href="images/Lisa_Elena_FlamencoMorosmll.jpg" rel="lightbox[roadtrip]"
-        title="The legendary Elena, Lisa & Naima Dalal: <em>Flamenco Moro</em>, 1985 ">
-        <img src="images/Lisa_Elena_FlamencoMorosmll.gif"></a>
-
-      <a class="thumbnail" href="images/FlamencoMoro1.jpg" rel="lightbox[roadtrip]" title="<em>Flamenco Moro</em> 1985: Lisa, left, with legends
-        Maria Alba & Victorio, Elena, 2nd from right."> <img src="images/FlamencoMoro1 copy.gif"></a>
-      <br />
-
-      <a class="thumbnail" href="images/LisaCapture__Tarantula_smll.jpg" rel="lightbox[roadtrip]" title="Performing with members of the New
-      Brunswick  Chamber Orchestra"> <img src="images/LisaCapture__Tarantula_smll copy.gif"></a>
-
-      <a class="thumbnail" href="images/Grndsculpture_Piedras1.jpg" rel="lightbox[roadtrip]" title="<em>Al Ritmo de las
-      Piedras</em> ('Rock Dance'), choreography by Lisa Botalico at The Grounds for Sculpture, NJ"><img
-          src="images/Grndsculpture_Piedras1.gif"></a>
-
-
-      <a class="thumbnail" href="images/Lisacomedypiecesmll.jpg" rel="lightbox[roadtrip]" title="<em>Lisa Botalico and Eva Lucena stole the show with their comedic</em> Tanguillos por
-        Chufla. <br/>(Damaris Solis, Critic, Flamenco Buzz)"><img src="images/Lisacomedypiecesmll copy.gif"></a>
-
-      <a class="thumbnail" href="images/Verdiales_Small.jpg" rel="lightbox[roadtrip]" title="<em>Verdiales</em>, choreographed by Lisa for the Alborada Spanish Dance Theatre. <br/><span style = 'font-size:80%;'><em>The</em> Verdiales
-          <em>was a
-          powerhouse of community.</em>
-        (Robert Johnson, The Star Ledger)</span>">
-        <img src="images/Verdialis_smll copy.gif"></a>
-
-      <br />
-
-      <a class="thumbnail" href="images/Sueno_smll.jpg" rel="lightbox[roadtrip]"
-        title="<em>Sueño</em>, a Flamenco <em>Nutcracker</em> conceived and directed by Lisa."><img
-          src="images/Sueno_smll copy.gif"></a>
-
-
-      <a class="thumbnail" href="images/Lisa_BalletdePuertoRicosmll.jpg" rel="lightbox[roadtrip]"
-        title="The Ballet de Puerto Rico"><img src="images/Lisa_BalletdePuertoRicosmll.gif"></a>
-
-
-      <a class="thumbnail" href="images/FireDance.jpg" rel="lightbox[roadtrip]"
-        title="<em>Fire Dance!</em> choreographed by Lisa Botalico to the magnficent music of Manuel deFalla"><img
-          src="images/FireDance copy.gif"></a>
-
-      <a class="thumbnail" href=" " title=" "><img src="images/Lisa_Marie3glow copy.gif"></a>
-
-      <ul>
-        <hr />
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Bio.html">Bio</a></li>
-        <li><a href="Reviews.html">Reviews</a></li>
-        <li><a href="Classes.html">Classes/Contact</a></li>
-        <li><a href="Gallery.html">Gallery</a></li>
-        <li><a href="Collaborations.html">Choreography/Collaborations</a></li>
-        <li><a href="Events.html">Events/Links</a></li>
-        <li><a href="Gallery2.html">Gallery 2</a></li>
-        <hr />
-      </ul>
+      </div>
     </div>
-  </div>
-</body>
+    <div class="row">
+      <div class="col-md-12">
 
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-</script>
+        <h1><span style="line-height: normal;"> Choreography/<br />Collaborations
+            <hr class="style2"></span></h1>
+
+        <br />
+
+        <div style="margin-top: 10px;padding-bottom:30px;" class=" gallerycontainer d-block rounded mx-auto sm"
+          id="header">
+
+          <a class='thumbnail' href="images/Lisa Performing.jpg" rel="lightbox[roadtrip]"
+            title='Lisa and Alexia (<em>Belly Dance & Beyond</em>)'><img src="images/Lisa Performing.gif" width="72px"
+              height="83px" border="0"></a>
+
+          <a class="thumbnail" href="images/LisaKim1.jpg" rel="lightbox[roadtrip]"
+            title="Lisa and Alexia (<em>Belly Dance & Beyond</em>)"><img src=" images/LisaKim1.gif"></a>
+
+          <a class="thumbnail" href="images/Lisa MarieGrnds for Sculpture3.jpg" rel="lightbox[roadtrip]"
+            title="<em>...en el jardin </em>  with modern dancer Marie Alonzo at the Grounds for Sculpture, NJ"><img
+              src="images/Lisa MarieGrnds for Sculpture3.gif"></a>
+
+          <a class="thumbnail" href="images/LisaRamya.jpg" rel="lightbox[roadtrip]" title="With Ramya Ramnarayan
+            in <em>Journey,</em> Alborada Spanish Dance Theatre"><img src="images/LisaRamya copy.gif"></a>
+
+          <br />
+
+          <a class="thumbnail" href="images/Lisa_Ramya2a.jpg" rel="lightbox[roadtrip]" title="Lisa with Ramya Ramnarayan, Bharathanatyam dancer, at the Crossroads Theatre, NJ
+          <br/><span style = 'font-size:80%;'><em>The highlight, however, was Federico Garcia Lorca&#146;s <em>Zorongo</em>, in which
+          Botalico
+          sang and danced while Ramnarayan translated the lyrics into her own idiom...Perhaps
+          more than
+          anything it was the performers&#146; musical sensitivity that enabled them so perfectly to
+          harmonize
+          their styles and footwork, creating an atmosphere of moonlit rapture.</em> (Star Ledger,
+          Sept
+          2010)</span>"> <img src="images/DSC_0789_788 copy.gif"></a>
+
+          <a class="thumbnail" href="images/Lisa_Willie.jpg" rel="lightbox[roadtrip]" title="Willie Sanchez of NJN's <em>Images/Imagenes</em> and the Emmy for his documentary <em>The
+        Spanish  Guitar</em>. Lisa is featured."><img src="images/Lisa_Willie copy.gif"></a>
+
+          <a class="thumbnail" href="images/Lisa_Ramya_Co.jpg" rel="lightbox[roadtrip]"
+            title="Lisa with Ramya Ramnarayan and the Ngifrithyanjali Ensemble, Crossroads Theatre">
+            <img src="images/Lisa_Ramya_Co.gif"></a>
+
+          <a class="thumbnail" href="images/Lisa_Elena_FlamencoMorosmll.jpg" rel="lightbox[roadtrip]"
+            title="The legendary Elena, Lisa & Naima Dalal: <em>Flamenco Moro</em>, 1985 ">
+            <img src="images/Lisa_Elena_FlamencoMorosmll.gif"></a>
+
+          <br />
+
+          <a class="thumbnail" href="images/FlamencoMoro1.jpg" rel="lightbox[roadtrip]" title="<em>Flamenco Moro</em> 1985: Lisa, left, with legends
+          Maria Alba & Victorio, Elena, 2nd from right."> <img src="images/FlamencoMoro1 copy.gif"></a>
+
+          <a class="thumbnail" href="images/LisaCapture__Tarantula_smll.jpg" rel="lightbox[roadtrip]" title="Performing with members of the New
+        Brunswick  Chamber Orchestra"> <img src="images/LisaCapture__Tarantula_smll copy.gif"></a>
+
+          <a class="thumbnail" href="images/Grndsculpture_Piedras1.jpg" rel="lightbox[roadtrip]" title="<em>Al Ritmo de las
+        Piedras</em> ('Rock Dance'), choreography by Lisa Botalico at The Grounds for Sculpture, NJ"><img
+              src="images/Grndsculpture_Piedras1.gif"></a>
+
+
+          <a class="thumbnail" href="images/Lisacomedypiecesmll.jpg" rel="lightbox[roadtrip]" title="<em>Lisa Botalico and Eva Lucena stole the show with their comedic</em> Tanguillos por
+          Chufla. <br/>(Damaris Solis, Critic, Flamenco Buzz)"><img src="images/Lisacomedypiecesmll copy.gif"></a>
+          <br />
+
+          <a class="thumbnail" href="images/Verdiales_Small.jpg" rel="lightbox[roadtrip]" title="<em>Verdiales</em>, choreographed by Lisa for the Alborada Spanish Dance Theatre. <br/><span style = 'font-size:80%;'><em>The</em> Verdiales
+            <em>was a
+            powerhouse of community.</em>
+          (Robert Johnson, The Star Ledger)</span>">
+            <img src="images/Verdialis_smll copy.gif"></a>
+
+          <a class="thumbnail" href="images/Sueno_smll.jpg" rel="lightbox[roadtrip]"
+            title="<em>Sueño</em>, a Flamenco <em>Nutcracker</em> conceived and directed by Lisa."><img
+              src="images/Sueno_smll copy.gif"></a>
+
+
+          <a class="thumbnail" href="images/Lisa_BalletdePuertoRicosmll.jpg" rel="lightbox[roadtrip]"
+            title="The Ballet de Puerto Rico"><img src="images/Lisa_BalletdePuertoRicosmll.gif"></a>
+
+
+          <a class="thumbnail" href="images/FireDance.jpg" rel="lightbox[roadtrip]"
+            title="<em>Fire Dance!</em> choreographed by Lisa Botalico to the magnficent music of Manuel deFalla"><img
+              src="images/FireDance copy.gif"></a>
+        </div>
+      </div>
+    </div>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
 
 </html>
