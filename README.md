@@ -1,4 +1,4 @@
-# lisabflamenco
+## Published website: www.lisabflamenco.com
 
 # Website of awesome flamenco dancer Lisa Botalico!
 
@@ -10,6 +10,8 @@
 
 - Updated and streamlined with Bootstrap
 
+- This link now redirects to a second revision of the original site in React
+
 ## Published website: www.lisabflamenco.com
 
-### Hosted by: GoDaddy.com
+
